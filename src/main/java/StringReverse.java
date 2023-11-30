@@ -13,6 +13,14 @@ public class StringReverse {
      * @return the reverse of str.
      */
     public String reverse(String str){
-        return null;
+        //last index in word
+        int x = str.length()-1;
+        StringBuilder newWord = new StringBuilder();
+        
+        for (int i = x; i >= 0; i-- ) {
+                newWord.append(str.charAt(i));
+        }
+
+        return newWord.toString();
     }
 }
